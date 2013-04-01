@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Hello World!
-tagline: Supporting tagline
+tagline: begining 
 ---
 {% include JB/setup %}
 
-## My Post Recently
+## My Recent Post 
 
 <ul class="posts">
   {% for post in site.posts %}
