@@ -1,9 +1,9 @@
 ﻿---
 layout: post
-title: "Reading code of redis-io"
-description: "redis-io is source code for website redios. Reading its Ruby code to unknown how it works"
-category: "Ruby"
-tags: [Ruby, redis-io]
+title: "Learning Ajax-solr"
+description: "AJAX Solr is a JavaScript library for creating user interfaces to Apache Solr"
+category: "Web"
+tags: [Ajax-solr, js]
 ---
 {% include JB/setup %}
 
