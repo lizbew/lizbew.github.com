@@ -3,7 +3,7 @@ layout: post
 title: "Learning Ajax-solr"
 description: "AJAX Solr is a JavaScript library for creating user interfaces to Apache Solr"
 category: "Web"
-tags: [Ajax-solr, js]
+tags: [Ajaxsolr,js]
 ---
 {% include JB/setup %}
 
