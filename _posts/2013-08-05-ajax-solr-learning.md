@@ -3,7 +3,6 @@ layout: post
 title: "Learning Ajax-solr"
 description: "AJAX Solr is a JavaScript library for creating user interfaces to Apache Solr"
 category: "Web"
-tags: [Ajaxsolr,js]
 ---
 {% include JB/setup %}
 
@@ -28,7 +27,7 @@ ajax-solr中提供了如下几个基本的类，所有类都包含在namesapce `
 
 首先需要初始化一个`Manager`初始，再创建一些Widget并通过方法`Manager.addWidget`添加到Manager中，最后再调用`Manager.init()`。`Manager.init()`会调用每一个Widget的`init()`。
 
-<pre class="prettyprint lang-js">Manager = new AjaxSolr.Manager({
+{% highlight js %}Manager = new AjaxSolr.Manager({
   solrUrl: 'http://localhost:8983/solr/'
 });
 
@@ -37,7 +36,7 @@ Manager.addWidget(new AjaxSolr.SearchCriteriaWidget({
   target: '#qform'
 }));
 Manager.init();
-</pre>
+{% endhighlight %}
 
 ##Manager.doRequest##
 
@@ -55,9 +54,9 @@ Manager.doRequest()
 </pre>
 
 
-<pre class="prettyprint lang-js">Manager.store.addByValue('q', '*:*');
+{% highlight js %}Manager.store.addByValue('q', '*:*');
 Manager.doRequest();
-</pre>
+{% endhighlight %}
 
 search时`q`所用到的用到的内容与格式，还是需要自己组装起来。
 
@@ -68,8 +67,8 @@ search时`q`所用到的用到的内容与格式，还是需要自己组装起�
 
 如下创建一个`SearchCriteriaWidget`，保存到文件SearchCriteriaWidget .js。
 
-<pre class="prettyprint lang-js">(function (callback) {
-  if (typeof define === 'function' && define.amd) {
+{% highlight js %}(function (callback) {
+  if (typeof define === 'function' &amp;&amp; define.amd) {
     define(['core/AbstractWidget'], callback);
   }
   else {
@@ -87,7 +86,7 @@ AjaxSolr.SearchCriteriaWidget = AjaxSolr.AbstractWidget.extend({
 })(jQuery);
 
 }));
-</pre>
+{% endhighlight %}
 
 ##结论##
 
