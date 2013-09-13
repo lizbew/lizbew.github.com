@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Learning Ajax-solr"
 description: "AJAX Solr is a JavaScript library for creating user interfaces to Apache Solr"
