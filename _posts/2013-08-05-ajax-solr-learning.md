@@ -66,7 +66,7 @@ search时`q`所用到的用到的内容与格式，还是需要自己组装起�
 
 将页面实现为不同的Widget，所得到的优势就是可以将json response写在不同的Widget里，便于化开不同的功能和管理。
 
-如下创建一个`SearchCriteriaWidget`，保存到文件SearchCriteriaWidget .js。
+如下创建一个`SearchCriteriaWidget`，保存到文件SearchCriteriaWidget.js。
 
 {% highlight js %}(function (callback) {
   if (typeof define === 'function' &amp;&amp; define.amd) {
