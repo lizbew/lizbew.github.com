@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Hello World!
-tagline: begining 
+title: Welcome to Vika's Garden 
 ---
 {% include JB/setup %}
 
