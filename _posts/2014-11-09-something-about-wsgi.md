@@ -2,7 +2,7 @@
 layout: post
 title: "something about wsgi"
 description: ""
-category: 
+category: python
 tags: [python, wsgi, webpy]
 ---
 {% include JB/setup %}
