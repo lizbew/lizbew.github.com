@@ -3,7 +3,7 @@ layout: post
 title: "替换smali文件中被混淆的类名"
 description: "use python to implement a tool to replace class name in smali files"
 category: python
-tags: [python, smali, android]
+tags: [python, script, smali, android]
 ---
 {% include JB/setup %}
 

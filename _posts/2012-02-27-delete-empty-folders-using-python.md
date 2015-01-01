@@ -2,8 +2,8 @@
 layout: post
 title: "Delete empty folders using Python"
 description: ""
-category: Programming
-tags: [Python]
+category: python
+tags: [python, script]
 ---
 {% include JB/setup %}
 

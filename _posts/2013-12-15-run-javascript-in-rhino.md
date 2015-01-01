@@ -16,24 +16,25 @@ tags: [rhino, java, javascript]
 
 先看下从[wikipedia][3]来的代码片段：
 
-    :::javascript
-    import javax.script.ScriptEngine;
-    import javax.script.ScriptEngineManager;
-    import javax.script.ScriptException;
+{% highlight java %}
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
     
-    public class RhinoEngine {
-        public static void main(String[] args) {
-            ScriptEngineManager mgr = new ScriptEngineManager();
-            ScriptEngine engine = mgr.getEngineByName("JavaScript");
-        
-            try {
-                engine.put("name", args[0]);
-                engine.eval("print('Hello ' + name + '!')");
-            } catch (ScriptException ex) {
-                ex.printStackTrace();
-            }    
-        }
+public class RhinoEngine {
+    public static void main(String[] args) {
+        ScriptEngineManager mgr = new ScriptEngineManager();
+        ScriptEngine engine = mgr.getEngineByName("JavaScript");
+       
+        try {
+            engine.put("name", args[0]);
+            engine.eval("print('Hello ' + name + '!')");
+        } catch (ScriptException ex) {
+            ex.printStackTrace();
+        }    
     }
+}
+{% endhighlight %}
 
 Rhino执行的javascript代码可以直接用调用java的类。当然，使用到的类需要先import。引入单个类用`importClass(java.lang.String)`，而引用整个包用`importPackage(java.lang)`.然后就可以在javascript中新建实例了`var reader = new BufferedReader( new InputStreamReader(System['in']) )`.
 
