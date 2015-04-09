@@ -66,7 +66,12 @@ int main()
 `int $0x80` 触发软件中断， 代码进入到中断处理函数 `system_call` 中， 即为系统调用处理函数。 `system_call` 的对应的中断在如下文件中设置：
 
 <pre>
+/linux-3.18.6/init/main.c
+asmlinkage __visible void __init start_kernel(void)
+561	trap_init();
+
 /linux-3.18.6/arch/x86/kernel/traps.c
+void __init trap_init(void)
 838 #ifdef CONFIG_X86_32
 839	 set_system_trap_gate(SYSCALL_VECTOR, &system_call);
 840	 set_bit(SYSCALL_VECTOR, used_vectors);
