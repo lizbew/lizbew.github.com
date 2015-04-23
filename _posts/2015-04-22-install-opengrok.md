@@ -54,3 +54,14 @@ tags: [opengrok, tomcat, xref, ctags]
 1. 将解压缩过后的代码文件移到到`/var/opengrok/src`下，推荐的文件夹命名方式为`name-version-branch`
 2. 运行命令`/srv/opengrok/opengrok-0.12.1/bin/OpenGrok index`
 
+## 索引时OutOfMemory
+
+JVM下遇到是经常的事， 当添加几个项目后跑`OpenGrok index`就遇到了。
+
+    09:18:33 SEVERE: Problem updating lucene index database:
+    java.lang.OutOfMemoryError: Java heap space
+
+加大Heap Size就解决了
+
+    JAVA_OPTS=-Xmx3072m ./OpenGrok index
+
