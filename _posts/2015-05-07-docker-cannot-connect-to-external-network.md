@@ -56,7 +56,8 @@ tags: [docker, network]
 
     $ sudo nano /etc/NetworkManager/NetworkManager.conf
     # dns=dnsmasq
-    $ sudo restart network-manager $ sudo restart docker
+    $ sudo restart network-manager
+    $ sudo restart docker
 
 ## Docker 网络设置
 
