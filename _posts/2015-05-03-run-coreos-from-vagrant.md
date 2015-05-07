@@ -68,7 +68,7 @@ box相关的命令：
 
     #discovery: https://discovery.etcd.io/<token>
 
-然后再将`<token>`换成从(https://discovery.etcd.io/new)[https://discovery.etcd.io/new]返回的结果。
+然后再将`<token>`换成从[https://discovery.etcd.io/new](https://discovery.etcd.io/new)返回的结果。
 
 接下来， 就可以启动CoreOS虚拟机了。 正常情况下会自动下载box， 但是网络环境的问题， 会出现域名无法解析的问题， 下载coreos box失败。*需要自备梯子了*。
 
